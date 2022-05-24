@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anota Aí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/stylefilme.css" media="screen" />
+    <link rel="icon" type="imagem/png" href="/prints/aba.png" />
+
+</head>
+<body>    
+                        <!-- ####### NAVBAR ####### -->
+    <header class="containerhead ">                    
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color: red; font-weight: bold;" href="index.html"><img src="/prints/aba.png" style="width:50px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: grey;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sessão
+                            </a>
+
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/index-filmes.html">FIlmes</a></li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/index-series.html">Séries</a></li>
+                            </ul>
+                        </li>                  
+                    </ul>
+
+                    <form class="d-flex">
+                        
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" style="font-style: italic;" aria-label="Search">
+                        <button type="button" id="btnsearch" class="btn btn-danger">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+                        <!-- ####### CARDS ####### -->
+    <div class="containerCards">
+        <div class="marginLeft">    
+            <div class="card zoom" style="width: 14rem;">
+                <img src="https://s2.glbimg.com/jbJMB8Lpvlt25QtxlA89JSfZCFw=/0x0:1200x675/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/Q/N/IXcy5kSiWGdhZAiGRg5Q/vingadores.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Os Vingadores</h5>
+                    <p class="card-text">Os heróis mais poderosos da terra se unem para combater os principais viloes do universo da marvel.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ação/Heróis</li>
+                    <li class="list-group-item"><img src="/prints/4estrelas.png" style="width: 95px;"></li>
+                    <li class="list-group-item">2012</li>
+                </ul>        
+            </div>
+        </div>
+
+            <div class="marginLeft">
+                <div class="card zoom ms-5" style="width: 14rem;">
+                    <img src="https://clarovideocdn5.clarovideo.net/PELICULAS/SHREKDWA/EXPORTACION_WEB/PT/SHREKDWAWHORIZONTAL.jpg?size=675x380" class="card-img-top" onclick="acionarModal" alt="...">
+                    <div class="card-body  d-flex flex-column align-items-center">
+                        <h5 class="card-title">Shrek</h5>
+                        <p class="card-text">Com a invasão de criaturas em seu pântano, Shrek parte para uma jornada garantir e a paz de seu lar.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Animação</li>
+                        <li class="list-group-item"><img src="/prints/4estrelas.png" style="width: 95px;"></li>
+                        <li class="list-group-item">2001</li>
+                    </ul>        
+                </div>
+                <!-- Botão para acionar modal -->
+                <div id="containerModal">
+                    <button type="button" class="btn btn-primary" id="buttonModal" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                    Ver mais informações sobre Shrek
+                    </button>                
+                    <!-- Modal -->
+                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="marginLeft">
+                <div class="card zoom ms-5" style="width: 14rem;">
+                    <img src="https://www.10wallpaper.com/wallpaper/1366x768/1712/DC_Comics_Superheroes_Justice_League_2017_4k_HD_1366x768.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Liga da Justiça</h5>
+                        <p class="card-text">Após a morte de Superman, os heróis precisam se reunir para deter uma grande ameaça.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Ação/Heróis</li>
+                        <li class="list-group-item"><img src="/prints/3estrelasmetade.png" style="width:78px;"></li>
+                        <li class="list-group-item">2017</li>
+                    </ul>        
+                </div>
+            </div>              
+    </div>
+
+    <div class="containerCards">
+
+        <div class="marginLeft">       
+            <div class="card zoom" style="width: 14rem;">
+                <img src="https://3.bp.blogspot.com/-7SZr8_Jp9Hw/UmclaTOMoPI/AAAAAAAAAWw/soqK2GSBe-c/s1600/Avatar.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Avatar</h5>
+                    <p class="card-text">No grande mundo de Pandora vivem criaturas em um ambiente com ar tóxico, o exército
+                        mandam um ex-soldado.
+                    </p>
+
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ficção científica</li>
+                    <li class="list-group-item"><img src="/prints/5estrelas.png" style="width: 130px;"></li>
+                    <li class="list-group-item">2009</li>
+                </ul>        
+            </div>
+        </div> 
+            
+            <div class="marginLeft">
+                <div class="card zoom ms-5" style="width: 14rem;">
+                    <img src="https://images7.alphacoders.com/100/1001353.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">X-men</h5>
+                        <p class="card-text">Os clássicos mutantes entram em conflito por defender as suas causas sobre a humanidade.
+
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Ação/Heróis</li>
+                        <li class="list-group-item"><img src="/prints/2estrelasmetade.png" style="width: 65px;"></li>
+                        <li class="list-group-item">2000 </li>
+                    </ul>        
+                </div>
+            </div>
+
+            <div class="marginLeft">
+                <div class="card zoom ms-5" style="width: 14rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF8OUuUzqbM74wl9sSmn0H3adpwNt3PpzBWDrWWbYHrcLodf_BwCUHTGrDCXCTrtA0v1U&usqp=CAU" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Kick ass 2</h5>
+                        <p class="card-text">Após sua primeira aventura, Kick Ass retorna para combater o mundo criminoso ao lado
+                            de aliados inesperados.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Comédia</li>
+                        <li class="list-group-item"><img src="/prints/4estrelas.png" style="width: 90px;"></li>
+                        <li class="list-group-item">2012</li>
+                    </ul>        
+                </div>
+            </div> 
+            
+    </div>
+
+    <div class="containerCards">
+        <div class="marginLeft">
+            <div class="card zoom" style="width: 14rem;">
+                <img src="https://playzuando.com.br/wp-content/uploads/2021/07/images-5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Morte no Nilo</h5>
+                    <p class="card-text">Em uma viagem de turismo pelo Egito, uma morte inesperada
+                        leva o detetive Hercule Poirot investigar o caso.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Investigação/Drama</li>
+                    <li class="list-group-item"><img src="/prints/4estrelas.png" style="width: 95px;"></li>
+                    <li class="list-group-item">2022</li>
+                </ul>        
+            </div>
+        </div>
+
+        <div class="marginLeft">
+            <div class="card zoom ms-5" style="width: 14rem;">
+                <img src="https://lh3.googleusercontent.com/-aGmK5ReqUnw/Ybt9mUR0NcI/AAAAAAAAN4k/eMCuN6c81pgC63uQOWe31woGFb7jmxA0ACNcBGAsYHQ/s16000/homem-aranha%2Bsem%2Bvolta%2Bpra%2Bcasa.png" class="card-img-top" alt="...">
+                <div class="card-body  d-flex flex-column align-items-center">
+                    <h5 class="card-title">Homem Aranha: Sem Volta para Casa</h5>
+                    <p class="card-text">Peter pede ajuda a Doutor Estranho para resolver a situação
+                        mas ambos acabam tendo.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ação/Heróis</li>
+                    <li class="list-group-item"><img src="/prints/4estrelas.png" style="width: 95px;"></li>
+                    <li class="list-group-item">2021</li>
+                </ul>        
+            </div>
+        </div>
+
+    
+        <div class="marginLeft">
+            <div class="card zoom ms-5" style="width: 14rem;">
+                <img src="https://clarovideocdn1.clarovideo.net/PELICULAS/GRAVEENCOUNTERS2/EXPORTACION_WEB/PT/GRAVEENCOUNTERS2WHORIZONTAL.jpg?size=675x380" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Fenomenos Paranormais 2</h5>
+                    <p class="card-text">Um grupo de jovens visita um local que dizem ser assombrado com o objetivo de fazer um filme.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Terror</li>
+                    <li class="list-group-item"><img src="/prints/3estrelasmetade.png" style="width:78px;"></li>
+                    <li class="list-group-item">2012</li>
+                </ul>        
+            </div>
+        </div>              
+</div>
+                    <!-- ####### FOOTER ####### -->
+    <footer class="containerfoot bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Cadastre-se para mais conteúdos</strong>
+                            </p>
+                        </div>                    
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example29" placeholder="Email" class="form-control"/>
+                            </div>
+                        </div>                   
+                        <div class="col-auto">
+                            <button type="submit" id="btnfoot" class="btn btn-outline-light mb-4">
+                            Cadastrar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>                    
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Direitos autorais: 
+            <a class="text-white" href="http://127.0.0.1:5500/html/index.html">Anotaaí.com</a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
