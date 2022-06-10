@@ -69,19 +69,25 @@ body{
 .card-img-top, h5{
     cursor: pointer;
 }
+
 .marginLeft{
     margin-left: 5%;
     margin-right: 5%;
 }
 
 /*################# MODAL #######################*/
-#buttonModal{
-    padding: 4px;
-    width: 250px;
-    color: black;
+#containerModal{
     display: flex;
+    margin-right: 5rem;
+}
+
+#buttonModal{
+    padding: 2px;
+    width: 20vh;
+    color: black;
     color: white;
     text-shadow: 2px 2px 3px black;
+    box-shadow: 1px 1px 5px black;
 }
 
 

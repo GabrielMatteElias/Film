@@ -31,7 +31,7 @@
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/index-filmes.html">FIlmes</a></li>
                                 <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/index-series.html">Séries</a></li>
-                                <li><a class="dropdown-item" href="http://127.0.0.1:5501/html/index-notas.html">Notas</a></li>
+                                <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/index-notas.html">Notas</a></li>
                             </ul>
                         </li>                  
                     </ul>
@@ -61,6 +61,33 @@
                     <li class="list-group-item">2012</li>
                 </ul>        
             </div>
+            <!-- #################### Botão para acionar modal #################### -->
+            <div id="containerModal">
+                <button type="button" class="btn btn-primary" id="buttonModal" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                Ver mais informações
+                </button>                
+                <!-- Modal -->
+                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">Shrek</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://clarovideocdn5.clarovideo.net/PELICULAS/SHREKDWA/EXPORTACION_WEB/PT/SHREKDWAWHORIZONTAL.jpg?size=675x380" class="card-img-top" onclick="acionarModal" alt="...">
+                                <p>Em um pântano distante, vive um ogro recluso chamado Shrek. A sua vida muda radicalmente quando invasores, e criaturas invadem seu lar. Com isso em mente, Shrek parte para uma jornada marcante e mudará a sua vida para sempre.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
             <div class="marginLeft">
@@ -76,27 +103,28 @@
                         <li class="list-group-item">2001</li>
                     </ul>        
                 </div>
-                <!-- Botão para acionar modal -->
+                <!-- #################### Botão para acionar modal #################### -->
                 <div id="containerModal">
                     <button type="button" class="btn btn-primary" id="buttonModal" data-toggle="modal" data-target="#ExemploModalCentralizado">
-                    Ver mais informações sobre Shrek
+                    Ver mais informações
                     </button>                
                     <!-- Modal -->
                     <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+                                    <h5 class="modal-title" id="TituloModalCentralizado">Shrek</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                ...
+                                    <img src="https://clarovideocdn5.clarovideo.net/PELICULAS/SHREKDWA/EXPORTACION_WEB/PT/SHREKDWAWHORIZONTAL.jpg?size=675x380" class="card-img-top" onclick="acionarModal" alt="...">
+                                    <p>Em um pântano distante, vive um ogro recluso chamado Shrek. A sua vida muda radicalmente quando invasores, e criaturas invadem seu lar. Com isso em mente, Shrek parte para uma jornada marcante e mudará a sua vida para sempre.
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +255,9 @@
                     <li class="list-group-item">2012</li>
                 </ul>        
             </div>
-        </div>              
+        </div> 
+
+        <div class="containerFilm"></div>             
 </div>
                     <!-- ####### FOOTER ####### -->
     <footer class="containerfoot bg-dark text-center text-white">
@@ -259,6 +289,7 @@
             <a class="text-white" href="http://127.0.0.1:5500/html/index.html">Anotaaí.com</a>
         </div>
     </footer>
+    <script src="/javascript/scriptFilme.js"></script>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
