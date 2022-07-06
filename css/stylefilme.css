@@ -82,14 +82,23 @@ body{
 }
 
 #buttonModal{
-    padding: 2px;
-    width: 20vh;
+    padding: 8px;
+    width: 32vh;
     color: black;
     color: white;
     text-shadow: 2px 2px 3px black;
     box-shadow: 1px 1px 5px black;
 }
 
+#buttonModalleft{
+    padding: 8px;
+    width: 32vh;
+    color: black;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 1px 1px 5px black;
+    margin-left: 48px;
+}
 
 /*################# FOOTER #######################*/
 .btn{

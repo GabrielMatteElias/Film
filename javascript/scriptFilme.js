@@ -1,5 +1,3 @@
-
-
 const form = document.querySelector('#form');
 
 form.addEventListener('submit', function (e) {
@@ -26,7 +24,6 @@ form.addEventListener('submit', function (e) {
     console.log(year);
 
     function getStars(metascores) {
-    
         switch (metascore) {
             case 1:                
                 return '<img src="/prints/1estrelas.png" style="width: 30px;">';
@@ -70,11 +67,7 @@ form.addEventListener('submit', function (e) {
     
 });
 
-
 function addFilm(msg) {
     const result = document.querySelector('.containerFilm');
     result.innerHTML = msg;
 }
-
-
-
